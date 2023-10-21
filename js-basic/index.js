@@ -28,3 +28,17 @@ let age= 25; // Number literal
 let inApproved = false; // Boolean literal
 let SecondName = undefined;
 let selectedColor = null
+
+// Objects 객체
+let person = {
+  name: 'wonji',
+  age: '25'
+}
+
+// Dot Notation
+person.name= 'sahoon'
+
+// Braket Notation
+person['name'] = 'sahoon wonji'
+
+console.log(person.name)
