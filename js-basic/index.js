@@ -42,3 +42,10 @@ person.name= 'sahoon'
 person['name'] = 'sahoon wonji'
 
 console.log(person.name)
+
+//Arrays
+let selectedColors = ['red', 'green']
+selectedColors[2] = 'blue'
+
+console.log(selectedColors[2])
+console.log(selectedColors.length)
