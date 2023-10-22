@@ -49,6 +49,26 @@
 
 let userColor = 'red';
 let defalutColor = 'blue';
-let currenColor = undefined || defalutColor;
+let currentColor = undefined || defalutColor;
 
-console.log(currenColor);
+console.log(currentColor);
+
+// BitWise Operators
+
+// Read, Write, Execute
+// 00000100
+// 00000010
+// 00000001
+
+
+let readPermission = 4;
+let wirtePermission = 2;
+let executePermission = 1;
+
+let myPermission = 0;
+
+myPermission = myPermission | readPermission | wirtePermission;
+
+let message = myPermission & readPermission ? 'yes' : 'no';
+
+console.log(myPermission);
