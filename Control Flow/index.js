@@ -1,12 +1,20 @@
-//Hour
-// If Hour is between 6am and 12pm: Good morning!
-// If it is between 12am and 6pm: Good afternoon!
-// Otherwise: Good evening!
+let role = 'guest';
 
-let Hour = 10;
+switch (role) {
+  case 'guest':
+    console.log('Guest User');
+    break;
 
-if (Hour >= 6 && Hour < 12) {
-  console.log('Good morning!');
-} else if (Hour >= 12 && Hour < 18) {
-  console.log('Good afternoon!');
-} else console.log('Good evening!');
+  case 'moderator':
+    console.log('Moderator User');
+    break;
+
+  default:
+    console.log('Unknown User');
+}
+
+if (role === 'guest') {
+  console.log('Guest User');
+} else if (role === 'moderator') {
+  console.log('Moderator User');
+} else console.log('Unknown User');
