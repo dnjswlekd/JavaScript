@@ -61,4 +61,7 @@ function squre(number) {
   return number * number;
 }
 
+let number = squre(4);
+
+console.log(number)
 console.log(squre(2*2));
