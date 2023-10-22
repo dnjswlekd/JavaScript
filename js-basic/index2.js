@@ -33,11 +33,19 @@ let x = 1;
 
 
 //관계형 연산자 Relational Operators
-console.log(x > 0);
-console.log(x >= 1);
-console.log(x < 1);
-console.log(x <= 1);
+// console.log(x > 0);
+// console.log(x >= 1);
+// console.log(x < 1);
+// console.log(x <= 1);
 
-//Equlity
-console.log(x === 1);
-console.log(x !== 1);
+// //Equlity
+// console.log(x === 1);
+// console.log(x !== 1);
+
+//Strict Equality (Type + Value) 더 엄격
+console.log(1 === 1);
+console.log('1' === 1);
+
+//Lose Equality
+console.log(1 == 1);
+console.log('1' == 1);
