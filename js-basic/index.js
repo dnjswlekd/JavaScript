@@ -49,3 +49,11 @@ selectedColors[2] = 'blue'
 
 console.log(selectedColors[2])
 console.log(selectedColors.length)
+
+//Functions
+
+function greet(name, lastName){
+  console.log('Hello Wolrd ' + name + ' ' + lastName)
+}
+
+greet('Wonji', 'Park');
