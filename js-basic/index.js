@@ -1,7 +1,6 @@
 //This is my first JavaScript code!
 // console.log('hello world')
 
-
 // variables 변수
 let name1 = 'wonji';
 console.log(name1);
@@ -15,45 +14,51 @@ console.log(name1);
 let firstName = 'wonji';
 let lastName = 'Park';
 
-
-
 // constants 상수
 const interestRate = 0.3;
 // interestRate = 1;
-console.log(interestRate)
+console.log(interestRate);
 
 // Primitive Types 기초적인, 원시적인 유형
 let name2 = 'wonji'; //String literal
-let age= 25; // Number literal
+let age = 25; // Number literal
 let inApproved = false; // Boolean literal
 let SecondName = undefined;
-let selectedColor = null
+let selectedColor = null;
 
 // Objects 객체
 let person = {
   name: 'wonji',
-  age: '25'
-}
+  age: '25',
+};
 
 // Dot Notation
-person.name= 'sahoon'
+person.name = 'sahoon';
 
 // Braket Notation
-person['name'] = 'sahoon wonji'
+person['name'] = 'sahoon wonji';
 
-console.log(person.name)
+console.log(person.name);
 
 //Arrays
-let selectedColors = ['red', 'green']
-selectedColors[2] = 'blue'
+let selectedColors = ['red', 'green'];
+selectedColors[2] = 'blue';
 
-console.log(selectedColors[2])
-console.log(selectedColors.length)
+console.log(selectedColors[2]);
+console.log(selectedColors.length);
 
 //Functions
 
-function greet(name, lastName){
-  console.log('Hello Wolrd ' + name + ' ' + lastName)
+//Perfoming a Task
+function greet(name, lastName) {
+  console.log('Hello Wolrd ' + name + ' ' + lastName);
 }
 
 greet('Wonji', 'Park');
+
+//Calculating a value
+function squre(number) {
+  return number * number;
+}
+
+console.log(squre(2*2));
