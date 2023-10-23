@@ -1,22 +1,16 @@
-//initialExpression, condition, incrementExpression
-// for (let i = 1; i <= 5; i++) {
-//   console.log('Hello', i)
-// }
-// for (let i = 5; i >= 1; i--) {
-//   if (i % 2 !== 0) console.log(i);
-// }
+// Infinite Loops
 
-// while
-// let i = 0;
-// while (i <= 5) {
-//   if (i % 2 !== 0) console.log(i);
-//   i++;
-// }
-
-// do-while : while안에 있는 조건문이 거짓이더라도 do는 무조건 실행되어짐
-// 쉽게 말해 표현하고 싶은걸 표현 후 조건문을 돌림
-let i = 9;
-do {
-  if (i % 2 !== 0) console.log(i);
+let i = 0;
+while (i < 5) {
+  console.log(i);
   i++;
-} while (i <= 5);
+}
+
+do{
+  console.log(i);
+  i++;
+} while (i < 5)
+
+for (let i = 0; i < 5;);
+
+//i를 증가 or 감소 시키지 않으면 무한루프에 빠지게 되니 유념하고 피하기
