@@ -1,16 +1,29 @@
-// Infinite Loops
+// for
+// while
+// do-while
+// 위 루프를 통해 동작을 여러 번 반복할 수 있다.
 
-let i = 0;
-while (i < 5) {
-  console.log(i);
-  i++;
-}
+// 객체의 속성이나 요소의 배열을 반복하는 루프가 더 있다.
 
-do{
-  console.log(i);
-  i++;
-} while (i < 5)
+//for-in
+const person = {
+  name: 'Mosh',
+  age: 30
+};
 
-for (let i = 0; i < 5;);
+// for (initialExpresssion; CSSConditionRule; increment)
+for (let key in person)
+console.log(key, person[key])
 
-//i를 증가 or 감소 시키지 않으면 무한루프에 빠지게 되니 유념하고 피하기
+// Dot Notation
+person.name
+
+// Bracket Notation
+person['name']
+
+const colors = ['red', 'green', 'blue'];
+
+for ( let index in colors)
+console.log(index, colors[index])
+
+//for-of
