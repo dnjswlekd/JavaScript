@@ -1,33 +1,39 @@
-// Divisible by 3 => Fizz
-// Divisible by 5 => Buzz
-// Divisible by both 3 and 5 => FizzBuzz
-// Not Divisible by 3 or 5 => input
-// Not a number => 'Not a number'
+// speed Limit = 70
+// 5 -> 1 point
+// Math.floor(1.3)
+// 12 points -> license suspended
 
-// My answer
-// function fizzBuzz(input) {
-//   if(input % 3 === 0 ){
-//     return 'Fizz'
-//   } else if ( input % 5 === 0 ) {
-//     return 'Buzz'
-//   } else if ( input === parseInt(input) ){
-//     return input;
-//   } else return 'Not a number'
+// checkSpeed(72);
+
+// My code
+// function checkSpeed(speed) {
+//   if (speed > 0 || speed <= 70) {
+//     console.log('OK');
+//   } else if (speed >= 75) {
+//     let num = 0;
+//     for(i=5; i< speed; i++;) {
+//       Math.floor(num);
+//     }
+//     console.log('Point :' num)
+//   } else if (speed >= 180) {
+//     console.log('license suspended');
+//   }
 // }
 
-const output = fizzBuzz(8);
-console.log(output);
+checkSpeed(130);
 
-// lecture answer
-function fizzBuzz(input) {
-  if (typeof input != 'number') return NaN;
-  
-  if (input % 3 === 0 && input % 5 === 0) return 'FizzBuzz';
+function checkSpeed(speed) {
+  const speedLimit = 70;
+  const kmPerPoint = 5;
 
-  if (input % 3 === 0) return 'Fizz';
-
-  if (input % 5 === 0) return 'Buzz';
-
-
-  return input;
+  if (speed < speedLimit + kmPerPoint) {
+    console.log('OK');
+    return;
+  }
+  const points = Math.floor((speed - speedLimit) / kmPerPoint);
+  if (points >= 12) {
+    console.log('license suspended');
+  } else {
+    console.log('Points:', points);
+  }
 }
