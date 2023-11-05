@@ -1,5 +1,18 @@
-const now = new Date();
-const date1 = new Date('Nov 11 2023 15:30');
-const date2 = new Date(2023, 4, 1, 9, 0)
+// let address = createAddress('a', 'b', 'c');
+let address = new Address('a', 'b', 'c');
 
-now.setFullYear(2023)
+console.log(address)
+
+// factory functions
+function createAddress(street, city, zipCode){
+  return {
+    street, city, zipCode
+  }
+}
+
+// constructor functions
+function Address(street, city, zipCode){
+  this.street = street;
+  this.city = city;
+  this.zipCode = zipCode;
+}
