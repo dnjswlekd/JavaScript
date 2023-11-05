@@ -5,15 +5,20 @@ const circle = {
   }
 }
 
-for ( let key in circle) {
-  console.log(key, circle[key])
+const another = {};
+
+
+for (let key in circle){
+  another[key] = circle[key]
 }
+another['radius'] = circle['radius']
 
-for (let key of Object.keys(circle)){
-  console.log(key, circle[key]);
-}
+// 위와 동일한 코드
+const another2 = Object.assign({
+  color: 'wonji'
+}, circle)
 
-for ( let entry of Object.entries(circle))
-console.log(entry);
+// 위와 동일한 코드 2
+const another3 = {...circle}
 
-if ( 'radius' in circle) console.log('yes')
+console.log(another3)
