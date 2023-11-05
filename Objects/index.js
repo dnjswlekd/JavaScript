@@ -1,13 +1,10 @@
-const circle = {
-  radius: 1
+let obj = {
+  value: 10
+};
+
+function increase(obj) {
+  obj.value++;
 }
 
-circle.color = 'yellow'
-circle['color'] = 'yellow'
-
-circle.draw = function (){}
-
-delete circle.color;
-delete circle.draw;
-
-console.log(circle)
+increase(obj);
+console.log(obj);
