@@ -1,17 +1,19 @@
-let x = {
-  value: 10
-}
- x.value= 20;
-
- console.log(x.value)
-
-let obj = {
-  value: 10
-};
-
-function increase(obj) {
-  obj.value++;
+const circle = {
+  radius: 1,
+  draw(){
+    console.log('draw');
+  }
 }
 
-increase(obj);
-console.log(obj);
+for ( let key in circle) {
+  console.log(key, circle[key])
+}
+
+for (let key of Object.keys(circle)){
+  console.log(key, circle[key]);
+}
+
+for ( let entry of Object.entries(circle))
+console.log(entry);
+
+if ( 'radius' in circle) console.log('yes')
