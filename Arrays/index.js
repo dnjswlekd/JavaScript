@@ -1,14 +1,13 @@
-const coures = [
-  { id: 1, name: 'a' },
-  { id: 2, name: 'b' },
-];
+const numbers = [1, 2, 3, 4];
 
-const course = coures.find((coures) => coures.name === 'a');
-// const course = coures.findIndex((coures) => coures.name === 'a');
+//End 마지막요소 제거
+const last = numbers.pop();
 
-const course2 = coures.find(function (course) {
-  return course.name === 'a';
-});
+//Beginning 첫번째요소 제거
+const first = numbers.shift();
+// [2,3]
 
-console.log(course);
-console.log(course2);
+// Middle
+numbers.splice(0);
+
+console.log(numbers);
