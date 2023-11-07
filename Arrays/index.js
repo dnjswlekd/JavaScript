@@ -1,13 +1,14 @@
-const numbers = [3, 4]
+const coures = [
+  { id: 1, name: 'a' },
+  { id: 2, name: 'b' },
+];
 
-//End
-numbers.push(5,6)
+const course = coures.find((coures) => coures.name === 'a');
+// const course = coures.findIndex((coures) => coures.name === 'a');
 
+const course2 = coures.find(function (course) {
+  return course.name === 'a';
+});
 
-//Beginning
-numbers.unshift(1,2)
-
-//Middle
-numbers.splice(2, 0, 'a', 'b')
-
-console.log(numbers)
+console.log(course);
+console.log(course2);
