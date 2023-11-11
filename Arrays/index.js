@@ -1,18 +1,12 @@
-const cousres = [
-  { id: 1, name: 'Node.js' },
-  { id: 2, name: 'javascript' },
-];
+const numbers = [1, 0, 2, 3];
 
-cousres.sort(function (a, b) {
-  // a < b => 1
-  // a> b => 1
-  // a === b => 0
-  const nameA = a.name.toUpperCase();
-  const nameB = b.name.toUpperCase();
-
-  if (nameA < nameB) return -1;
-  else if (nameA > nameB) return 1;
-  return 0;
+const allPositive = numbers.every(function (value) {
+  return value > 0;
 });
 
-console.log(cousres);
+const atLeastOnePositive = numbers.some(function (value) {
+  return value > 0;
+});
+
+console.log(allPositive);
+console.log(atLeastOnePositive);
