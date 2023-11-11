@@ -1,13 +1,18 @@
-const numbers = [1, 2, 3];
+const cousres = [
+  { id: 1, name: 'Node.js' },
+  { id: 2, name: 'javascript' },
+];
 
-const join = numbers.join();
-console.log(join);
+cousres.sort(function (a, b) {
+  // a < b => 1
+  // a> b => 1
+  // a === b => 0
+  const nameA = a.name.toUpperCase();
+  const nameB = b.name.toUpperCase();
 
-const message = 'This is my first message';
+  if (nameA < nameB) return -1;
+  else if (nameA > nameB) return 1;
+  return 0;
+});
 
-const parts = message.split(' ');
-
-console.log(parts);
-
-const combined = parts.join('+');
-console.log(combined);
+console.log(cousres);
