@@ -1,15 +1,5 @@
-const first = [1, 2, 3];
-const second = [4, 5, 6];
+const numbers = [1, 2, 3];
 
-const combine = first.concat(second);
-console.log(combine);
+for (let number of numbers) console.log(number);
 
-const slice = combine.slice(2, 4);
-console.log(slice);
-
-const merge = [...first, 'a', ...second, 'b'];
-console.log(merge);
-
-const copy = [...combine];
-
-console.log(copy);
+numbers.forEach((number, index) => console.log(number, index));
