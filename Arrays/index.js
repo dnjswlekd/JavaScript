@@ -1,9 +1,12 @@
 const numbers = [1, -1, 2, 3];
 
-const items = numbers
-  .filter((num) => num >= 0)
-  .map((num) => ({ value: num }))
-  .filter((obj) => obj.value > 1)
-  .map((obj) => obj.value);
+// let sum = 0;
+// for (let num of numbers) {
+//   sum += num;
+// }
 
-console.log(items);
+const sum = numbers.reduce(
+  (accumulator, currentValue) => accumulator + currentValue
+);
+
+console.log(sum);
