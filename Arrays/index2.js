@@ -1,16 +1,18 @@
 const numbers = [1, 2, 3, 4];
-// output = [2,3,4]
 
-const output = except(numbers, [1]);
+const output = move(numbers, 1, 2);
 
 console.log(output);
 
-function except(array, excluded) {
-  let output = [];
-  for (let arr of array) {
-    if (!excluded.includes(arr)) {
-      output.push(arr);
-    }
+function move(array, index, offset) {
+  const position = index + offset;
+  if (position >= array.length || position < 0) {
+    console.error('Invaild offset');
+    return;
   }
+
+  let output = [...array];
+  const element = output.splice(index, 1)[0];
+  output.splice(offset, 0, element);
   return output;
 }
