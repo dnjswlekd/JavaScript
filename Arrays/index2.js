@@ -1,12 +1,16 @@
 const numbers = [1, 2, 3, 4];
+// output = [2,3,4]
 
-console.log(includes(numbers, 1));
+const output = except(numbers, [1]);
 
-function includes(array, searchElement) {
-  for (let num of array) {
-    if (num === searchElement) {
-      return true;
+console.log(output);
+
+function except(array, excluded) {
+  let output = [];
+  for (let arr of array) {
+    if (!excluded.includes(arr)) {
+      output.push(arr);
     }
-    return false;
   }
+  return output;
 }
