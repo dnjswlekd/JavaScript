@@ -1,10 +1,10 @@
 const numbers = [1, 2, 3, 4];
 
-console.log(includes(numbers, -1));
+console.log(includes(numbers, 1));
 
 function includes(array, searchElement) {
-  for (let el of array) {
-    if (el === searchElement) {
+  for (let num of array) {
+    if (num === searchElement) {
       return true;
     }
     return false;
