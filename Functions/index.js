@@ -1,14 +1,11 @@
-walk();
+function sum() {
+  let total = 0;
+  console.log(arguments);
 
-function walk() {
-  console.log('walk');
+  for (num of arguments) {
+    total += num;
+  }
+  return total;
 }
 
-console.log(x);
-let x = 1;
-
-run();
-
-let run = function () {
-  console.log('run');
-};
+console.log(sum(1, 2, 3, 4, 5));
