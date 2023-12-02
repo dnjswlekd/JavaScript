@@ -1,12 +1,14 @@
+walk();
+
 function walk() {
   console.log('walk');
 }
 
-function run() {
-  console.log('run');
-}
+console.log(x);
+let x = 1;
 
-let move = run;
-
-move();
 run();
+
+let run = function () {
+  console.log('run');
+};
